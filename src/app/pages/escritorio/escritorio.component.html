@@ -1,0 +1,7 @@
+<h1>Escritorio {{ escritorio }}</h1>
+<h4>Atendiendo a <small>{{ numeroEnAtencion }}</small></h4>
+<hr>
+
+<button [disabled]="numeroEnAtencion === '*No hay Tickets*'" (click)="atenderTicket()" class="btn btn-primary btn-lg">
+    Atender siguiente ticket
+</button>
